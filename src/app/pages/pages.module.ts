@@ -11,6 +11,7 @@ import { ProgressComponent } from './progress/progress.component';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { ChartsModule } from 'ng2-charts';
 import { GraficodonaComponent } from '../components/graficodona/graficodona.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 
@@ -21,7 +22,8 @@ import { GraficodonaComponent } from '../components/graficodona/graficodona.comp
     ProgressComponent,
     Graficas1Component,
     IncrementadorComponent,
-    GraficodonaComponent
+    GraficodonaComponent,
+    AccountSettingsComponent
     ],
 imports: [
 SharedModule,
@@ -33,7 +35,8 @@ exports: [
   DashboardComponent,
   ProgressComponent,
   Graficas1Component,
-  GraficodonaComponent
+  GraficodonaComponent,
+  AccountSettingsComponent
 ]
 })
 
