@@ -20,28 +20,30 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 @NgModule({
   declarations: [
     PagesComponent,
+    IncrementadorComponent,
+    PromesasComponent,
+    RxjsComponent,
+
+
     DashboardComponent,
     ProgressComponent,
     Graficas1Component,
-    IncrementadorComponent,
     GraficodonaComponent,
-    AccountSettingsComponent,
-    PromesasComponent,
-    RxjsComponent
-    ],
-imports: [
-SharedModule,
-PAGES_ROUTES,
-FormsModule,
-ChartsModule
-],
-exports: [
-  DashboardComponent,
-  ProgressComponent,
-  Graficas1Component,
-  GraficodonaComponent,
-  AccountSettingsComponent
-]
+    AccountSettingsComponent
+  ],
+  imports: [
+    SharedModule,
+    PAGES_ROUTES,
+    FormsModule,
+    ChartsModule
+  ],
+  exports: [
+    DashboardComponent,
+    ProgressComponent,
+    Graficas1Component,
+    GraficodonaComponent,
+    AccountSettingsComponent
+  ]
 })
 
-export class PagesModule{ }
+export class PagesModule { }

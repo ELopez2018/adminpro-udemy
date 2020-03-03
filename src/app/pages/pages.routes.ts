@@ -7,11 +7,13 @@ import { ProgressComponent } from './progress/progress.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { LoginGuardGuard } from '../services/service.index';
 
 const pageRoutes: Routes = [
   {
     path: '',
     component: PagesComponent,
+    canActivate: [ LoginGuardGuard ],
     children: [
       { path: 'dashboard', component: DashboardComponent, data: { titulo: 'Principal'} },
       { path: 'progress', component: ProgressComponent, data: { titulo: 'Barra de Progreso'} },
